@@ -8,13 +8,10 @@ import Footer from "../components/Footer";
 function Home(): React.JSX.Element {
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor="red" barStyle="light-content" />
+            <StatusBar backgroundColor="#3a415a" barStyle="light-content" />
             <Head/>
             <StatusBar backgroundColor="#3a415a" barStyle="light-content" />
 
-            <View style={styles.header}>
-                <Image source={require('../assents/images/logo.png')} style={styles.logo} />
-            </View>
             <Footer/>
 
         </View>
@@ -31,11 +28,11 @@ const styles = StyleSheet.create({
     header: {
         backgroundColor: '#3a415a',
         alignItems: 'center',
-        paddingVertical: 15
+        paddingVertical: 25
     },
     logo: {
-        width: 500,
-        height: 500,
+        width: 390,
+        height: 629,
 
 
     },

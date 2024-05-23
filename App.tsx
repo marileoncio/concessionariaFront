@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import CadastroCarros from './src/screens/CadastroCarros';
 import Footer from './src/components/Footer';
 import Home from './src/screens/Home';
-import PesquisarProdutos from './src/screens/PesquisarProduto';
+import Listagem from './src/screens/Listagem';
 
 
 const Stack = createStackNavigator();
@@ -18,9 +18,10 @@ function App(): JSX.Element{
 
       <Stack.Screen name='Profile' component={CadastroCarros} options={{headerShown: false}}/>
 
-      <Stack.Screen name='EditarProduto' component={Footer} options={{headerShown: false}}/>
+      <Stack.Screen name='listagem' component={Listagem} options={{headerShown: false}}/>
 
-      <Stack.Screen name='PesquisarProduto' component={PesquisarProdutos} options={{headerShown: false}}/>
+
+
 
     </Stack.Navigator>
   </NavigationContainer>
