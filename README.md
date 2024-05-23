@@ -12,11 +12,11 @@
 
 
 <h2 align="center">Descrição do Projeto</h2>
- O Sistema de Gerenciamento da Concessionária Bumblebee Drive's é uma aplicação web desenvolvida em PHP que visa facilitar a gestão de veículos, clientes, vendas e estoque para a concessionária. O sistema proporcionará uma plataforma centralizada para que a equipe da Bumblebee Drive's possa efetivamente gerenciar todas as atividades relacionadas à venda e manutenção de veículos. Esse projeto tem como objetivo facilitar o desenvolvimento e realizar um site de uma concessionária fictícia feita por estudantes da escola SESI, para aprofundar nossos conhecimentos nas linguagens PHP e Json.
+O projeto de front end da Bumblebee Drive é destinado a criar uma interface de usuário intuitiva, responsiva e visualmente atraente para a concessionária de veículos. A plataforma deve proporcionar uma experiência de navegação fluida, facilitando o acesso às informações sobre veículos, serviços, promoções e suporte ao cliente.
 <hr>
 
 <h2 align="center">Objetivos</h2>
-O objetivo do Sistema de Gerenciamento da Concessionária Bumblebee Drive's é melhorar a eficiência operacional da concessionária, fornecendo uma solução intuitiva e abrangente para o gerenciamento de todas as suas operações. Ao automatizar tarefas manuais e fornecer insights valiosos por meio de relatórios detalhados, o sistema ajudará a concessionária a otimizar suas vendas, melhorar o atendimento ao cliente e impulsionar o crescimento do negócio.
+O projeto de front end da Bumblebee Drive visa não apenas fornecer informações sobre veículos e serviços, mas também criar uma experiência de usuário envolvente que reflita a qualidade e a excelência da concessionária. Com foco em design responsivo, performance e interatividade, a plataforma está destinada a se tornar uma ferramenta essencial para clientes e para o sucesso contínuo da Bumblebee Drive.
 <hr>
 
 <p align="center">
@@ -25,48 +25,41 @@ O objetivo do Sistema de Gerenciamento da Concessionária Bumblebee Drive's é m
 <hr>
 
 # Funcionalidades do projeto
-* ✔️`Funcionalidade 1`: Gestão de Veículos: Permitirá que a concessionária adicione novos veículos ao seu inventário, atualize informações como modelo, ano, preço, etc., e remova veículos vendidos do estoque.
+* ✔️`Funcionalidade 1`: Experiência do Usuário (UX): Garantir uma navegação simples e intuitiva, com fácil acesso às informações essenciais.
+* ✔️`Funcionalidade 2`: Design Responsivo: A interface deve ser totalmente responsiva, oferecendo uma experiência consistente em dispositivos móveis, tablets e desktops.
+* ✔️`Funcionalidade 3`:Estética Atraente: Utilizar um design moderno e limpo, que reflita a identidade visual da Bumblebee Drive.
+* ✔️`Funcionalidade 4`:Performance: Otimizar o tempo de carregamento das páginas e a performance geral da aplicação.
+* ✔️`Funcionalidade 5`:Funcionalidades Interativas: Implementar funcionalidades interativas que envolvam os usuários, como filtros de busca avançados, comparadores de veículos, agendamento de test drives e outros.
 
 
 # 💻 Tecnologias utilizadas
-- PHP: Para o desenvolvimento do back-end da aplicação, incluindo a lógica de negócios e a interação com o banco de dados.
-
-- MySQL: Para armazenar dados relacionados a veículos, clientes, vendas, etc.
-
-- HTML/CSS: Para o desenvolvimento da interface do usuário, proporcionando uma experiência visual agradável e responsiva.
-
-- JavaScript (opcional): Para adicionar interatividade à interface do usuário, como validação de formulários ou atualização dinâmica de conteúdo.
-
-
+- HTML5 e CSS: Para a estruturação e estilização das páginas.
+- JavaScript: Para a implementação de funcionalidades interativas.
+- Frameworks e Bibliotecas: React.js ou Angular.js para criação de componentes reutilizáveis e gerenciamento de estado.
+- Integração com APIs: Para obter dados dinâmicos, como inventário de veículos e informações de serviços.
  # 📁 Acesso ao projeto
  ```
- git clone https://github.com/marileoncio/concessionaria.git
+ git clone https://github.com/marileoncio/concessionariaFront.git
   ```
 
 # 🛠️ Abrir e rodar o projeto
  ```
-cd concessionaria
+cd concessionariaFront
  ```
  ```
 code .
  ```
  ```
-composer update
+npm install
  ```
 ```
-copy .env.example .env
- ```
- ```
-php artisan migrate
- ```
-  ```
 git config --global user.name "marileoncio"
  ```
-  ```
+```
 git config --global user.email "mariana.timoteo19@yahoo.com"
  ```
   ```
-php artisan serve
+npm start
  ```
 
 # 👩🏽‍👩🏽‍👦🏽‍👦🏽 Desenvolvedores do projeto 
