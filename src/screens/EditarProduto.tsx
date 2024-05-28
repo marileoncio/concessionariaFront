@@ -32,16 +32,16 @@ const EditarProduto: React.FC = () => {
 
     useEffect(() => {
 
-     const {carros} = route.params;
+     const {item} = route.params;
 
-        setModelo(carros.modelo);
-        setAno(carros.ano);
-        setMarca(carros.marca);
-        setCor(carros.cor);
-        setPeso(carros.peso);
-        setPotencia(carros.potencia);
-        setDescricao(carros.descricao);
-        setPreco(carros.valor);
+        setModelo(item.modelo);
+        setAno(item.ano);
+        setMarca(item.marca);
+        setCor(item.cor);
+        setPeso(item.peso);
+        setPotencia(item.potencia);
+        setDescricao(item.descricao);
+        setPreco(item.valor);
     })
     return (
         <View style={styles.container}>
@@ -110,8 +110,9 @@ const EditarProduto: React.FC = () => {
                 </TouchableOpacity>
 
                 <View style={styles.menuList}></View>
-                <Footer />
+                
             </View>
+            <Footer />
         </View>
     );
 }

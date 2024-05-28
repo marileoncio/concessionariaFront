@@ -6,6 +6,7 @@ import CadastroCarros from './src/screens/CadastroCarros';
 import Footer from './src/components/Footer';
 import Home from './src/screens/Home';
 import Listagem from './src/screens/Listagem';
+import EditarProduto from './src/screens/EditarProduto';
 
 
 const Stack = createStackNavigator();
@@ -19,6 +20,8 @@ function App(): JSX.Element{
       <Stack.Screen name='Profile' component={CadastroCarros} options={{headerShown: false}}/>
 
       <Stack.Screen name='listagem' component={Listagem} options={{headerShown: false}}/>
+
+      <Stack.Screen name='editar' component={EditarProduto} options={{headerShown: false}}/>
 
 
 

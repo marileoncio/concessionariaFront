@@ -45,7 +45,7 @@ function Listagem(): React.JSX.Element {
     const buscar = async () => {
 
         try {
-            const response = await axios.post('http://10.137.11.229:8000/api/carros/find/' + modeloPequisa);
+            const response = await axios.get('http://10.137.11.229:8000/api/carros/find/' + modeloPequisa);
             console.log('buscando os carros')
             setCarros(response.data.data)
             if (response.data.status === true) {
