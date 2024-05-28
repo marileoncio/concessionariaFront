@@ -119,7 +119,7 @@ function Listagem(): React.JSX.Element {
 
             <TextInput
                 style={{ height: 40, borderColor: '#F2d22e', borderWidth: 5, marginTop: 10, marginHorizontal: 20, borderRadius: 15 }}
-                placeholder="Pesquise por modelo"
+                placeholder="  Pesquise por modelo"
                 value={modeloPequisa}
                 onChangeText={setModeloPesquisa}
             />
@@ -151,32 +151,34 @@ const styles = StyleSheet.create({
         color: 'black'
     },
     delete: {
-        width: 50,
-        height: 50,
+        width: 30,
+        height: 30,
+        marginRight: 10,
         position: 'absolute',
         marginHorizontal: 270,
-        marginVertical: -190
+        marginVertical: -155
     },
     editar: {
-        width: 50,
-        height: 50,
+        width: 30,
+        height: 30,
+        marginRight: 10,
         position: 'absolute',
         marginHorizontal: 210,
-        marginVertical: -190
+        marginVertical: -155
     },
     container: {
         flex: 1,
         backgroundColor: 'white'
     },
     Pesquisa: {
-        padding: 10,
+        padding: 14,
         backgroundColor: '#43ec5f',
-        width: 80,
-        height: 10,
+        width: 60,
+        height: 20,
         position: 'absolute',
-        top: 190,
+        top: 186.5,
         right: 30,
-        borderRadius: 10,
+        borderRadius: 30,
     },
     text: {
         color: 'black'

@@ -48,7 +48,7 @@ const CadastroCarros: React.FC = () => {
 
             <View style={styles.header}>
                 <Image source={require('../assents/images/logo.png')} style={styles.logo} />
-                <Text style={styles.headerText2}>Cadastro Veiculo</Text>
+                <Text style={styles.headerText2}>Cadastro de Veículos</Text>
 
             </View>
 
@@ -105,7 +105,7 @@ const CadastroCarros: React.FC = () => {
 
                             <TextInput
                                 style={styles.input}
-                                placeholder="Preco"
+                                placeholder="Preço"
                                 value={preco}
                                 onChangeText={setPreco}
                             />
