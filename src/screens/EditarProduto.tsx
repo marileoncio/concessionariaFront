@@ -42,7 +42,7 @@ const EditarProduto: React.FC = () => {
         setPotencia(item.potencia);
         setDescricao(item.descricao);
         setPreco(item.valor);
-    })
+    },[])
     return (
         <View style={styles.container}>
             <StatusBar backgroundColor="red" barStyle="light-content" />

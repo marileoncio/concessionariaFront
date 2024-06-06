@@ -118,6 +118,7 @@ const CadastroCarros: React.FC = () => {
                     </ScrollView>
 
             <Footer />
+            
         </View>
 
     );
