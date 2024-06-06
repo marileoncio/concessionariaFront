@@ -6,7 +6,8 @@ import { FlatList, TextInput } from "react-native-gesture-handler";
 import axios from "axios";
 import { useNavigation } from "@react-navigation/native";
 
-function Listagem(): React.JSX.Element {
+
+function Marca(): React.JSX.Element {
     const navigation = useNavigation();
 
     const [carros, setCarros] = useState<Carro[]>([]);
@@ -48,6 +49,7 @@ function Listagem(): React.JSX.Element {
             const response = await axios.post('http://10.137.11.229:8000/api/carros/find/' + modeloPequisa);
             console.log('buscando os carros')
             setCarros(response.data.data)
+            console.log(carros)
             if (response.data.status === true) {
 
             } else {
@@ -58,9 +60,11 @@ function Listagem(): React.JSX.Element {
         }
     };
 
+
+
     const listarCarros = async () => {
         try {
-            const response = await axios.get('http://10.137.11.229:8000/api/carros/all');
+            const response = await axios.get('http://10.137.11.232:8000/api/carros/all');
             //  console.log(response.data)
             if (response.data.status === true) {
                 setCarros(response.data.data); // Set the state with the correct data
@@ -69,6 +73,8 @@ function Listagem(): React.JSX.Element {
             console.log(error);
         }
     }
+
+
 
 
     const renderItem = ({ item }: { item: Carro }) => (
@@ -92,16 +98,9 @@ function Listagem(): React.JSX.Element {
 
     return (
         <View style={styles.container}>
+            
             <Head />
             <StatusBar backgroundColor="#3a415a" barStyle="light-content" />
-
-            <TextInput
-                style={{ height: 40, borderColor: '#F2d22e', borderWidth: 5, marginTop: 10, marginHorizontal: 20, borderRadius: 15 }}
-                placeholder="  Pesquise por modelo"
-                value={modeloPequisa}
-                onChangeText={setModeloPesquisa}
-            />
-            <TouchableOpacity style={styles.Pesquisa} onPress={() => buscar()}><Text>Pesquisar</Text></TouchableOpacity>
 
             <FlatList showsVerticalScrollIndicator={false}
                 data={carros}
@@ -129,37 +128,35 @@ const styles = StyleSheet.create({
         color: 'black'
     },
     delete: {
-        width: 30,
-        height: 30,
-        marginRight: 10,
+        width: 50,
+        height: 50,
         position: 'absolute',
         marginHorizontal: 270,
-        marginVertical: -155
+        marginVertical: -190
     },
     editar: {
-        width: 30,
-        height: 30,
-        marginRight: 10,
+        width: 50,
+        height: 50,
         position: 'absolute',
         marginHorizontal: 210,
-        marginVertical: -155
+        marginVertical: -190
     },
     container: {
         flex: 1,
         backgroundColor: 'white'
     },
     Pesquisa: {
-        padding: 14,
+        padding: 10,
         backgroundColor: '#43ec5f',
-        width: 60,
-        height: 20,
+        width: 80,
+        height: 10,
         position: 'absolute',
-        top: 186.5,
+        top: 190,
         right: 30,
-        borderRadius: 30,
+        borderRadius: 10,
     },
     text: {
         color: 'black'
     }
 })
-export default Listagem;
+export default Marca;

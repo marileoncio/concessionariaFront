@@ -43,7 +43,7 @@ const EditarProduto: React.FC = () => {
         setPeso(item.peso);
         setPotencia(item.potencia);
         setDescricao(item.descricao);
-        setPreco(item.valor);
+        setPreco(item.preco);
     },[])
 
     const atualizar = () => {
